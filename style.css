@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Poppins";
+  font-weight: 800;
+}
+.header-container {
+  background-color: rgb(202, 160, 202);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  color: white;
+}
+.countries-container {
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-top: 17px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.country-card {
+  width: 250px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  display: inline-block;
+  transition: transform0.2s ease-in-out;
+}
+main {
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.country-card:hover {
+  transform: scale(1.02);
+}
+.country-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+.card-text {
+  padding-inline: 8px;
+}
+.card-title {
+  font-size: 20px;
+}
+.card-text p {
+  font-size: 10px;
+}
+
+@media (max-width: 800px) {
+  .countries-container {
+    justify-content: center;
+  }
+  .country-details {
+    flex-direction: column;
+  }
+}
+
+.country-details {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  margin: 70px;
+}
+.country-details img {
+  width: 500px;
+}
+.details-div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  column-gap: 18px;
+  max-height: 100px;
+  flex-wrap: wrap;
+}
+
+.details-div p {
+  margin: 0;
+}
+.backBtn {
+  height: 50px;
+  width: 160px;
+  box-shadow: 0 0 0 7px white;
+  border: none;
+  margin-top: 50px;
+  margin-left: 40px;
+  background-color: rgb(71, 63, 63);
+  color: white;
+  font-size: 20px;
+}
